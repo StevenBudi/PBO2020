@@ -2,7 +2,7 @@ public class Keramik {
     int panjang, lebar, isi, harga;
     float totalKeramik, totalBox, totalHarga;
 
-    private void keramik(String x){
+    protected void keramik(String x){
         if (x.equals("A")){
             panjang = 30;
             lebar = 30;
@@ -15,7 +15,7 @@ public class Keramik {
             isi = 5;
             harga = 65000;
         }
-        else if (x.equals("C")){
+        else if (x.equals("C")) {
             panjang = 30;
             lebar = 40;
             isi = 8;
@@ -45,11 +45,5 @@ public class Keramik {
 
     }
 
-    public static void main(String[] args){
-        Keramik bejo = new Keramik();
-        bejo.keramik("A");
-        bejo.keramik("B");
-        bejo.keramik("C");
 
-    }
 }
