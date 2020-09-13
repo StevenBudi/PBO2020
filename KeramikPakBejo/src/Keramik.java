@@ -31,9 +31,15 @@ public class Keramik {
         if (totalKeramik - Math.round(totalKeramik) != 0 && totalKeramik - Math.round(totalKeramik) < 0.5){
             totalKeramik = Math.round(totalKeramik) + 1;
         }
+        else {
+            totalKeramik = Math.round(totalKeramik);
+        }
         totalBox = totalKeramik/isi;
         if (totalBox - Math.round(totalBox) != 0 && totalBox - Math.round(totalBox) < 0.5){
             totalBox = Math.round(totalBox) + 1;
+        }
+        else {
+            totalBox = Math.round(totalBox);
         }
         totalHarga = totalBox * harga;
 
