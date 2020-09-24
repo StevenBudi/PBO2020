@@ -1,5 +1,5 @@
 public class Keramik {
-    private int panjang, lebar, isi, harga;
+    int panjang, lebar, isi, harga;
     private String tipe;
 
     Keramik(String x) {
@@ -9,22 +9,22 @@ public class Keramik {
     private void jenis() {
         switch (this.tipe) {
             case "A":
-                panjang = 30;
-                lebar = 30;
-                isi = 10;
-                harga = 54000;
+                this.panjang = 30;
+                this.lebar = 30;
+                this.isi = 10;
+                this.harga = 54000;
                 break;
             case "B":
-                panjang = 40;
-                lebar = 40;
-                isi = 5;
-                harga = 65000;
+                this.panjang = 40;
+                this.lebar = 40;
+                this.isi = 5;
+                this.harga = 65000;
                 break;
             case "C":
-                panjang = 40;
-                lebar = 30;
-                isi = 8;
-                harga = 60000;
+                this.panjang = 40;
+                this.lebar = 30;
+                this.isi = 8;
+                this.harga = 60000;
                 break;
             default:
                 break;
